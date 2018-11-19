@@ -1,0 +1,8 @@
+Version 1
+Created a flask page to accept a wordlist to spell check. Sanitized input to prevent injection attacks.
+
+Version 1.1
+Added login page and register ability. Sign out button too. If no user is logged in, site will redirect you to login page.
+
+Version 1.2
+Added python's logging feature. Different levels of severity.

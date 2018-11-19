@@ -1,0 +1,160 @@
+11/18/2018 08:39:37 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+11/18/2018 08:39:47 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+11/18/2018 08:39:58 PM Username not found on load.
+11/18/2018 08:39:58 PM No user logged in. Redirecting to login.
+11/18/2018 08:39:58 PM 127.0.0.1 - - [18/Nov/2018 20:39:58] "GET / HTTP/1.1" 302 -
+11/18/2018 08:39:58 PM Username not found on load.
+11/18/2018 08:39:58 PM 127.0.0.1 - - [18/Nov/2018 20:39:58] "GET /login HTTP/1.1" 200 -
+11/18/2018 08:39:58 PM 127.0.0.1 - - [18/Nov/2018 20:39:58] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:40:04 PM Exception on /register [GET]
+Traceback (most recent call last):
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cso26\Desktop\NYU Classes\4 Senior Year\AppSec\app.py", line 64, in register
+    logging.warning('Registering returned an error: ' + error)
+TypeError: Can't convert 'NoneType' object to str implicitly
+11/18/2018 08:40:04 PM 127.0.0.1 - - [18/Nov/2018 20:40:04] "GET /register HTTP/1.1" 500 -
+11/18/2018 08:41:38 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+11/18/2018 08:41:46 PM Username not found on load.
+11/18/2018 08:41:46 PM No user logged in. Redirecting to login.
+11/18/2018 08:41:46 PM 127.0.0.1 - - [18/Nov/2018 20:41:46] "GET / HTTP/1.1" 302 -
+11/18/2018 08:41:46 PM Username not found on load.
+11/18/2018 08:41:46 PM 127.0.0.1 - - [18/Nov/2018 20:41:46] "GET /login HTTP/1.1" 200 -
+11/18/2018 08:41:46 PM 127.0.0.1 - - [18/Nov/2018 20:41:46] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:41:56 PM Exception on /login [POST]
+Traceback (most recent call last):
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cso26\Desktop\NYU Classes\4 Senior Year\AppSec\app.py", line 72, in login
+    if users[request.form['username']] != hash(request.form['password']):
+KeyError: 'g'
+11/18/2018 08:41:56 PM 127.0.0.1 - - [18/Nov/2018 20:41:56] "POST /login HTTP/1.1" 500 -
+11/18/2018 08:49:10 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+11/18/2018 08:49:17 PM Username not found on load.
+11/18/2018 08:49:17 PM No user logged in. Redirecting to login.
+11/18/2018 08:49:17 PM 127.0.0.1 - - [18/Nov/2018 20:49:17] "GET / HTTP/1.1" 302 -
+11/18/2018 08:49:17 PM Username not found on load.
+11/18/2018 08:49:17 PM 127.0.0.1 - - [18/Nov/2018 20:49:17] "GET /login HTTP/1.1" 200 -
+11/18/2018 08:49:17 PM 127.0.0.1 - - [18/Nov/2018 20:49:17] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:49:26 PM Exception on /login [POST]
+Traceback (most recent call last):
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cso26\Desktop\NYU Classes\4 Senior Year\AppSec\app.py", line 70, in login
+    if users[request.form['username']] != hash(request.form['password']):
+KeyError: 'c'
+11/18/2018 08:49:26 PM 127.0.0.1 - - [18/Nov/2018 20:49:26] "POST /login HTTP/1.1" 500 -
+11/18/2018 08:54:22 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+11/18/2018 08:54:25 PM Error on login. Probably user does not exist in dictionary.
+11/18/2018 08:54:25 PM Username not found on load.
+11/18/2018 08:54:25 PM 127.0.0.1 - - [18/Nov/2018 20:54:25] "POST /login HTTP/1.1" 200 -
+11/18/2018 08:54:25 PM 127.0.0.1 - - [18/Nov/2018 20:54:25] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:56:32 PM Error on login. Probably user does not exist in dictionary.
+11/18/2018 08:56:32 PM Username not found on load.
+11/18/2018 08:56:32 PM 127.0.0.1 - - [18/Nov/2018 20:56:32] "POST /login HTTP/1.1" 200 -
+11/18/2018 08:56:32 PM 127.0.0.1 - - [18/Nov/2018 20:56:32] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:56:35 PM Username not found on load.
+11/18/2018 08:56:35 PM 127.0.0.1 - - [18/Nov/2018 20:56:35] "GET /register HTTP/1.1" 200 -
+11/18/2018 08:56:35 PM 127.0.0.1 - - [18/Nov/2018 20:56:35] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:56:38 PM Exception on /register [POST]
+Traceback (most recent call last):
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\cso26\desktop\nyu classes\4 senior year\appsec\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\cso26\Desktop\NYU Classes\4 Senior Year\AppSec\app.py", line 60, in register
+    logging.info('New user registered: ' + users[request.form['username']])
+TypeError: Can't convert 'int' object to str implicitly
+11/18/2018 08:56:38 PM 127.0.0.1 - - [18/Nov/2018 20:56:38] "POST /register HTTP/1.1" 500 -
+11/18/2018 08:57:29 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+11/18/2018 08:57:34 PM New user registered: 6207884845279521024
+11/18/2018 08:57:34 PM 127.0.0.1 - - [18/Nov/2018 20:57:34] "POST /register HTTP/1.1" 302 -
+11/18/2018 08:57:34 PM Username not found on load.
+11/18/2018 08:57:34 PM 127.0.0.1 - - [18/Nov/2018 20:57:34] "GET /login HTTP/1.1" 200 -
+11/18/2018 08:57:34 PM 127.0.0.1 - - [18/Nov/2018 20:57:34] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:57:37 PM Username not found on load.
+11/18/2018 08:57:37 PM 127.0.0.1 - - [18/Nov/2018 20:57:37] "GET /register HTTP/1.1" 200 -
+11/18/2018 08:57:37 PM 127.0.0.1 - - [18/Nov/2018 20:57:37] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:57:40 PM New user registered: -1795924114688807409
+11/18/2018 08:57:40 PM 127.0.0.1 - - [18/Nov/2018 20:57:40] "POST /register HTTP/1.1" 302 -
+11/18/2018 08:57:40 PM Username not found on load.
+11/18/2018 08:57:40 PM 127.0.0.1 - - [18/Nov/2018 20:57:40] "GET /login HTTP/1.1" 200 -
+11/18/2018 08:57:40 PM 127.0.0.1 - - [18/Nov/2018 20:57:40] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 08:57:42 PM User e logged in.
+11/18/2018 08:57:42 PM 127.0.0.1 - - [18/Nov/2018 20:57:42] "POST /login HTTP/1.1" 302 -
+11/18/2018 08:57:42 PM User loaded.
+11/18/2018 08:57:42 PM 127.0.0.1 - - [18/Nov/2018 20:57:42] "GET / HTTP/1.1" 200 -
+11/18/2018 11:35:39 PM  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+11/18/2018 11:35:41 PM Username not found on load.
+11/18/2018 11:35:41 PM No user logged in. Redirecting to login.
+11/18/2018 11:35:41 PM 127.0.0.1 - - [18/Nov/2018 23:35:41] "GET / HTTP/1.1" 302 -
+11/18/2018 11:35:41 PM Username not found on load.
+11/18/2018 11:35:42 PM 127.0.0.1 - - [18/Nov/2018 23:35:42] "GET /login HTTP/1.1" 200 -
+11/18/2018 11:35:42 PM 127.0.0.1 - - [18/Nov/2018 23:35:42] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 11:35:44 PM 127.0.0.1 - - [18/Nov/2018 23:35:44] "GET /favicon.ico HTTP/1.1" 404 -
+11/18/2018 11:36:48 PM Error on login. Probably user does not exist in dictionary.
+11/18/2018 11:36:48 PM Username not found on load.
+11/18/2018 11:36:48 PM 127.0.0.1 - - [18/Nov/2018 23:36:48] "POST /login HTTP/1.1" 200 -
+11/18/2018 11:36:48 PM 127.0.0.1 - - [18/Nov/2018 23:36:48] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 11:38:02 PM Username not found on load.
+11/18/2018 11:38:02 PM 127.0.0.1 - - [18/Nov/2018 23:38:02] "GET /register HTTP/1.1" 200 -
+11/18/2018 11:38:02 PM 127.0.0.1 - - [18/Nov/2018 23:38:02] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 11:38:05 PM New user registered: 7788578474641997201
+11/18/2018 11:38:05 PM 127.0.0.1 - - [18/Nov/2018 23:38:05] "POST /register HTTP/1.1" 302 -
+11/18/2018 11:38:05 PM Username not found on load.
+11/18/2018 11:38:05 PM 127.0.0.1 - - [18/Nov/2018 23:38:05] "GET /login HTTP/1.1" 200 -
+11/18/2018 11:38:05 PM 127.0.0.1 - - [18/Nov/2018 23:38:05] "GET /static/bootstrap.min.css HTTP/1.1" 404 -
+11/18/2018 11:38:08 PM User v logged in.
+11/18/2018 11:38:08 PM 127.0.0.1 - - [18/Nov/2018 23:38:08] "POST /login HTTP/1.1" 302 -
+11/18/2018 11:38:08 PM User loaded.
+11/18/2018 11:38:08 PM 127.0.0.1 - - [18/Nov/2018 23:38:08] "GET / HTTP/1.1" 200 -
+11/18/2018 11:38:11 PM User loaded.
+11/18/2018 11:38:11 PM User logged out.
+11/18/2018 11:38:11 PM 127.0.0.1 - - [18/Nov/2018 23:38:11] "GET /logout HTTP/1.1" 200 -
+11/18/2018 11:38:25 PM Username not found on load.
+11/18/2018 11:38:25 PM No user logged in. Redirecting to login.
+11/18/2018 11:38:25 PM 127.0.0.1 - - [18/Nov/2018 23:38:25] "GET / HTTP/1.1" 302 -
+11/18/2018 11:38:25 PM Username not found on load.
+11/18/2018 11:38:25 PM 127.0.0.1 - - [18/Nov/2018 23:38:25] "GET /login HTTP/1.1" 200 -
+11/18/2018 11:42:38 PM User v logged in.
+11/18/2018 11:42:38 PM 127.0.0.1 - - [18/Nov/2018 23:42:38] "POST /login HTTP/1.1" 302 -
+11/18/2018 11:42:38 PM User loaded.
+11/18/2018 11:42:38 PM 127.0.0.1 - - [18/Nov/2018 23:42:38] "GET / HTTP/1.1" 200 -
